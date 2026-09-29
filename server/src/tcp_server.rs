@@ -136,6 +136,10 @@ fn http_config<Backend>(
         "/health",
         web::get().to(async || HttpResponse::Ok().finish()),
     )
+    .route(
+        "/metrics",
+        web::get().to(crate::metrics::metrics_handler::<Backend>),
+    )
     .route("/settings", web::get().to(get_settings::<Backend>))
     .service(
         web::scope("/auth")

@@ -36,6 +36,7 @@ jwt = { workspace = true }
 ldap3_proto = { workspace = true }
 log = { workspace = true }
 opaque-ke = { workspace = true }
+prometheus = { workspace = true }
 rand = { workspace = true }
 rand_chacha = "0.3"
 rustls-pemfile = "2"

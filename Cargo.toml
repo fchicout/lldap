@@ -93,6 +93,11 @@ version = "0.17"
 [workspace.dependencies.pretty_assertions]
 version = "1"
 
+[workspace.dependencies.prometheus]
+version = "0.13"
+default-features = false
+features = ["process"]
+
 [workspace.dependencies.rand]
 version = "0.8"
 features = ["small_rng", "getrandom"]

@@ -9,6 +9,7 @@ pub mod jwt_sql_tables;
 pub mod ldap_server;
 pub mod logging;
 pub mod mail;
+pub mod metrics;
 pub mod sql_tcp_backend_handler;
 pub mod tcp_backend_handler;
 pub mod tcp_server;
